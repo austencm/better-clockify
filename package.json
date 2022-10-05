@@ -1,0 +1,31 @@
+{
+  "name": "better-clockify",
+  "description": "Improvements for clockify.me",
+  "version": "1.0.0",
+  "author": "Austen Morgan (https://github.com/austencm)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/austencm/better-clockify.git"
+  },
+  "keywords": [
+    "clockify",
+    "round",
+    "addon",
+    "browser",
+    "chrome",
+    "extension",
+    "plugin"
+  ],
+  "scripts": {
+    "start": "NODE_ENV=development webpack",
+    "build": "NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "*",
+    "copy-webpack-plugin": "^7.0.0",
+    "webpack": "^5.37.1",
+    "webpack-run-chrome-extension": "^0.6.0",
+    "zip-webpack-plugin": "^4.0.1"
+  }
+}
