@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Better Clockify"
+    "message": "Clockify Rounder"
   },
   "appDescription": {
-    "message": "Just time entry rounding for now. Maybe more in the future."
+    "message": "Round time entries to the nearest 15 minutes."
   }
 }

@@ -16,7 +16,6 @@ module.exports = {
   // Where webpack looks to start building the bundle
   entry: {
     content: `${paths.src}/js/content.js`,
-    options: `${paths.src}/js/options.js`,
     background: `${paths.src}/js/background.js`,
   },
 
@@ -32,9 +31,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         `${paths.src}/manifest.json`,
-        { from: `${paths.src}/*.html`, context: paths.src },
         { from: `${paths.src}/_locales`, to: `${paths.build}/_locales` },
-        { from: `${paths.src}/css`, to: `${paths.build}/css` },
         { from: `${paths.src}/images`, to: `${paths.build}/images` },
       ],
     }),
@@ -46,7 +43,7 @@ module.exports = {
     !IS_PROD &&
       new RunChromeExtension({
         extensionPath: paths.build,
-        startingUrl: 'https://clockify.me',
+        startingUrl: 'https://app.clockify.me',
         autoReload: true,
       }),
   ].filter(Boolean),
