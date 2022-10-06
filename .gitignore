@@ -105,4 +105,4 @@ dist
 
 .DS_store
 
-release.zip
+release-*.zip
