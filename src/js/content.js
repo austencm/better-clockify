@@ -1,3 +1,5 @@
+console.log('Rounding...');
+
 function roundToMultipleOf(value, multiple) {
   return Math.round(value / multiple) * multiple;
 }
@@ -38,3 +40,5 @@ document
 
     setTimeout(() => input.blur());
   });
+
+console.log('...rounding done.');

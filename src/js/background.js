@@ -15,12 +15,14 @@ chrome.runtime.onInstalled.addListener(() => {
       },
     ]);
   });
+});
 
-  // Inject the content script when action is clicked
-  chrome.action.onClicked.addListener((tab) => {
-    chrome.scripting.executeScript({
-      target: { tabId: tab.id },
-      files: ['content.js'],
-    });
+// Inject the content script when action is clicked
+chrome.action.onClicked.addListener((tab) => {
+  console.log('Injecting content script');
+
+  chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    files: ['content.js'],
   });
 });
