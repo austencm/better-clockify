@@ -2,6 +2,8 @@
 
 Improvements for clockify.me. Just time entry rounding for now. Maybe more in the future.
 
+![](https://img.shields.io/chrome-web-store/users/giijdhmideaigenlgbdnecehhebaklli)
+
 ## Instructions
 
 1. Go to https://app.clockify.me/tracker
