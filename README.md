@@ -1,6 +1,6 @@
 # Better Clockify
 
-Improvements for clockify.me. Just time entry rounding for now. Maybe more in the future.
+Chrome extension aiming to improve Clockify. Just time entry rounding for now. Maybe more in the future.
 
 ![](https://img.shields.io/chrome-web-store/users/giijdhmideaigenlgbdnecehhebaklli)
 
